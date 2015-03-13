@@ -28,7 +28,7 @@ Task targets, files and options may be specified according to the grunt [Configu
 
 Typically you'll just want to provide files in the standard Grunt way.
 
-```json
+```js
 tabs4life: {
 	src: 'path/to/files/*.js'
 }
@@ -49,7 +49,7 @@ Pass this whatever you would pass for options for [grunt-contrib-jshint](https:/
 #### lintspaces
 Pass this whatever you would pass for options for [grunt-lintspaces](https://github.com/schorfES/grunt-lintspaces).
 
-```json
+```js
 tabs4life: {
 	options: {
 		jscs: {
