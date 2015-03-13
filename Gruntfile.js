@@ -11,7 +11,6 @@ module.exports = function (grunt) {
 			self: {
 				src: [
 					'.gitignore',
-					'.travis.yml',
 					'Gruntfile.js',
 					'tasks/**/*.js',
 					'README.md',
