@@ -12,6 +12,7 @@ module.exports = function (grunt) {
 				src: [
 					'.gitignore',
 					'Gruntfile.js',
+					'LICENSE',
 					'tasks/**/*.js',
 					'README.md',
 					'test/files/good/**/*'

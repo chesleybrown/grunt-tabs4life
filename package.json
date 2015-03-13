@@ -4,11 +4,17 @@
 	"version": "0.1.0",
 	"author": {
 		"name": "Chesley Brown",
+		"email": "me@chesleybrown.ca",
 		"url": "http://www.chesleybrown.ca"
 	},
 	"engines": {
 		"node": ">=0.10.0"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chesleybrown/grunt-tabs4life.git"
+	},
+	"license": "MIT",
 	"scripts": {
 		"test": "mocha"
 	},
