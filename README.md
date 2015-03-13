@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/chesleybrown/grunt-tabs4life.svg?branch=master)](https://travis-ci.org/chesleybrown/grunt-tabs4life)
 [![Dependency Status](https://david-dm.org/chesleybrown/grunt-tabs4life.svg)](https://david-dm.org/chesleybrown/grunt-tabs4life)
 [![devDependency Status](https://david-dm.org/chesleybrown/grunt-tabs4life/dev-status.svg)](https://david-dm.org/chesleybrown/grunt-tabs4life#info=devDependencies)
+[![NPM version](https://badge.fury.io/js/grunt-tabs4life.svg)](http://badge.fury.io/js/grunt-tabs4life)
 
 Grunt task for enforcing a very opinionated coding style.
 
