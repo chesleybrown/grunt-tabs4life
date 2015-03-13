@@ -37,6 +37,14 @@ module.exports = function (grunt) {
 				},
 				src: ['Gruntfile.js', 'tasks/**/*.js']
 			},
+			test_lintspacesCustomConfig: {
+				options: {
+					lintspaces: {
+						trailingspaces: true
+					}
+				},
+				src: ['Gruntfile.js', 'tasks/**/*.js']
+			},
 			test_jscsBad: {
 				src: [
 					'Gruntfile.js',

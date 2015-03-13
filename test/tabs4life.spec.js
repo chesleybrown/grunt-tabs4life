@@ -48,6 +48,16 @@ describe('Grunt tabs4life', function () {
 				});
 			});
 		});
+		
+		describe('lintspaces', function () {
+			it('should now find lintspace errors', function (done) {
+				exec('grunt tabs4life:test_lintspacesCustomConfig', execOptions, function (error, stdout) {
+					expect(error).not.to.be.null;
+					expect(stdout).to.contain('Unexpected trailing spaces found.');
+					done();
+				});
+			});
+		});
 	});
 	
 	describe('when used on files that are bad', function () {

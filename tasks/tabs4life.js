@@ -9,10 +9,12 @@ module.exports = function (grunt) {
 			jshint: {}
 		});
 		
+		// We only want jshint and jscs to check .js files
 		var js = this.filesSrc.filter(function (filepath) {
 			return path.extname(filepath) === '.js';
 		});
 		
+		// Get jshint settings from .jshintrc file and load them as the defaults
 		var jshintrc = grunt.file.readJSON(__dirname + '/../.jshintrc');
 		grunt.config('jshint', {
 			options: _.extend(jshintrc, options.jshint || {}),
@@ -20,6 +22,7 @@ module.exports = function (grunt) {
 		});
 		grunt.task.run('jshint');
 		
+		// Get jscs settings from .jscsrc file and load them as the defaults
 		var jscsrc = grunt.file.readJSON(__dirname + '/../.jscsrc');
 		grunt.config('jscs', {
 			options: _.extend(jscsrc, options.jscs || {}),
@@ -28,8 +31,13 @@ module.exports = function (grunt) {
 		grunt.task.run('jscs');
 		
 		grunt.config('lintspaces', {
+			// Have to set defaults here instead of reading them from
+			// .editorconfig because then they wouldn't be able to override
+			// the options
 			options: _.extend({
-				editorconfig: __dirname + '/../.editorconfig',
+				indentation: 'tabs',
+				newline: true,
+				trailingspaces: false,
 				ignores: [
 					'js-comments'
 				]
