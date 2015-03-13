@@ -1,5 +1,6 @@
 {
 	"multistr": true,
+	"expr": true,
 	"bitwise": true,
 	"curly": true,
 	"forin": true,

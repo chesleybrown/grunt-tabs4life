@@ -1,5 +1,8 @@
 'use strict';
 
-// this js file has hint issues
-var used, notUsed;
+var used
+
+// jshint issue: this var is never used
+var notUsed;
+
 used = 'used!';

@@ -1,20 +1,27 @@
 'use strict';
 
 module.exports = function (grunt) {
-	require('load-grunt-tasks')(grunt);
-	
 	grunt.loadTasks('tasks');
 	
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		tabs4life: {
 			self: {
+				options: {
+					jshint: {
+						globals: {
+							describe: true,
+							it: true
+						}
+					}
+				},
 				src: [
 					'.gitignore',
 					'Gruntfile.js',
 					'LICENSE',
 					'tasks/**/*.js',
 					'README.md',
+					'test/*.js',
 					'test/files/good/**/*'
 				]
 			},
