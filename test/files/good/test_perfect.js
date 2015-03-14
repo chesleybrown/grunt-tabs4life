@@ -233,12 +233,15 @@ if (true) {
 if (true) {a();}
 */
 
-// We requireCamelCaseOrUpperCaseIdentifiers
+// We requireCamelCaseOrUpperCaseIdentifiers ignoreProperties
 var camelCase = 0;
 var CamelCase = 1;
 var _camelCase = 2;
 var camelCase_ = 3;
 var UPPER_CASE = 4;
+var obj = {
+	some_id: 100
+};
 /* BAD
 var lower_case = 1;
 var Mixed_case = 2;
@@ -246,7 +249,7 @@ var mixed_Case = 3;
 */
 
 // Use vars so jshint doesn't complain
-camelCase = CamelCase = _camelCase = camelCase_ = UPPER_CASE;
+camelCase = CamelCase = _camelCase = camelCase_ = UPPER_CASE = obj;
 
 // We requireCapitalizedConstructors
 var B = function () {};

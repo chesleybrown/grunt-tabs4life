@@ -52,7 +52,7 @@
 	"disallowTrailingComma": true,
 	"disallowYodaConditions": true,
 	"requireBlocksOnNewline": true,
-	"requireCamelCaseOrUpperCaseIdentifiers": true,
+	"requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
 	"requireCapitalizedComments": true,
 	"requireCapitalizedConstructors": true,
 	"requireCurlyBraces": [
