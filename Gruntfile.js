@@ -17,6 +17,8 @@ module.exports = function (grunt) {
 				},
 				src: [
 					'.gitignore',
+					'.jscsrc',
+					'.jshintrc',
 					'Gruntfile.js',
 					'LICENSE',
 					'tasks/**/*.js',
@@ -25,10 +27,10 @@ module.exports = function (grunt) {
 					'test/files/good/**/*'
 				]
 			},
-			test_noConfig: {
+			testNoConfig: {
 				src: ['Gruntfile.js', 'tasks/**/*.js']
 			},
-			test_jscsCustomConfig: {
+			testJscsCustomConfig: {
 				options: {
 					jscs: {
 						disallowTrailingWhitespace: true
@@ -36,7 +38,7 @@ module.exports = function (grunt) {
 				},
 				src: ['Gruntfile.js', 'tasks/**/*.js']
 			},
-			test_jshintCustomConfig: {
+			testJshintCustomConfig: {
 				options: {
 					jshint: {
 						quotmark: 'double'
@@ -44,7 +46,7 @@ module.exports = function (grunt) {
 				},
 				src: ['Gruntfile.js', 'tasks/**/*.js']
 			},
-			test_lintspacesCustomConfig: {
+			testLintspacesCustomConfig: {
 				options: {
 					lintspaces: {
 						trailingspaces: true
@@ -52,21 +54,21 @@ module.exports = function (grunt) {
 				},
 				src: ['Gruntfile.js', 'tasks/**/*.js']
 			},
-			test_jscsBad: {
+			testJscsBad: {
 				src: [
 					'Gruntfile.js',
 					'tasks/**/*.js',
 					'test/files/bad/test_jscs.js'
 				]
 			},
-			test_jshintBad: {
+			testJshintBad: {
 				src: [
 					'Gruntfile.js',
 					'tasks/**/*.js',
 					'test/files/bad/test_jshint.js'
 				]
 			},
-			test_lintspacesBad: {
+			testLintspacesBad: {
 				src: [
 					'Gruntfile.js',
 					'tasks/**/*.js',

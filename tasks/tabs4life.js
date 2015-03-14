@@ -36,9 +36,11 @@ module.exports = function (grunt) {
 		grunt.task.run('jshint');
 		
 		grunt.config('lintspaces', {
-			// Have to set defaults here instead of reading them from
-			// .editorconfig because then they wouldn't be able to override
-			// the options
+			/*
+			 * Have to set defaults here instead of reading them from
+			 * .editorconfig because then they wouldn't be able to override
+			 * the options
+			 */
 			options: _.extend({
 				indentation: 'tabs',
 				newline: true,

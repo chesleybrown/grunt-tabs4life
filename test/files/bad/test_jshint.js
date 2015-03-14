@@ -1,8 +1,8 @@
 'use strict';
 
-var used
+var used;
 
-// jshint issue: this var is never used
+// Jshint issue: this var is never used
 var notUsed;
 
 used = 'used!';
