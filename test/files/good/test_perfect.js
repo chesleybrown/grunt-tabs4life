@@ -310,14 +310,6 @@ var b = 5;
 var a = 8; var b = 5;
 */
 
-// We requirePaddingNewLinesInObjects
-a = {
-	a: 1
-};
-/* BAD
-a = { a: 1 };
-*/
-
 // We requireParenthesesAroundIIFE
 b = (function () {
 	return 1;

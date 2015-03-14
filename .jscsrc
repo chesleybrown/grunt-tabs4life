@@ -85,7 +85,6 @@
 		"catch"
 	],
 	"requireLineBreakAfterVariableAssignment": true,
-	"requirePaddingNewLinesInObjects": true,
 	"requireParenthesesAroundIIFE": true,
 	"requireSpaceBeforeBinaryOperators": [
 		"=", "+=", "-=", "*=", "/=", "%=", "<<=", ">>=", ">>>=",
