@@ -379,10 +379,14 @@ d = b + c;
 d = b +c;
 */
 
-// We safeContextKeyword self
+// We safeContextKeyword self or ctrl
 a = function () {
 	var self = this;
 	self.example();
+};
+a = function () {
+	var ctrl = this;
+	ctrl.example();
 };
 /* BAD
 a = function () {

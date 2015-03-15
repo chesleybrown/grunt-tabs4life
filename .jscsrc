@@ -108,7 +108,10 @@
 		"beforeOpeningCurlyBrace": true
 	},
 	"requireSpaceAfterBinaryOperators": true,
-	"safeContextKeyword": "self",
+	"safeContextKeyword": [
+		"ctrl",
+		"self"
+	],
 	"validateLineBreaks": "LF",
 	"validateIndentation": {
 		"value": "\t",
