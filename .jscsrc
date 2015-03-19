@@ -11,7 +11,6 @@
 	"disallowOperatorBeforeLineBreak": [
 		"?",
 		"||",
-		":",
 		"."
 	],
 	"disallowPaddingNewlinesInBlocks": true,
