@@ -1,18 +1,18 @@
 {
-	"multistr": true,
-	"expr": true,
 	"bitwise": true,
 	"curly": true,
+	"expr": true,
 	"forin": true,
 	"latedef": true,
+	"multistr": true,
 	"newcap": true,
 	"noarg": true,
+	"node": true,
 	"nonew": true,
-	"undef": true,
-	"unused": true,
-	"strict": true,
-	"trailing": true,
 	"quotmark": "single",
 	"smarttabs": true,
-	"node": true
+	"strict": true,
+	"trailing": true,
+	"undef": true,
+	"unused": true
 }
