@@ -9,6 +9,8 @@
 	"disallowMultipleLineStrings": true,
 	"disallowNewlineBeforeBlockStatements": true,
 	"disallowOperatorBeforeLineBreak": [
+		"?",
+		"||",
 		"."
 	],
 	"disallowPaddingNewlinesInBlocks": true,
@@ -51,6 +53,7 @@
 	"disallowTrailingWhitespace": "ignoreEmptyLines",
 	"disallowTrailingComma": true,
 	"disallowYodaConditions": true,
+	"disallowKeywordsOnNewLine": ["+"],
 	"requireBlocksOnNewline": true,
 	"requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
 	"requireCapitalizedComments": true,

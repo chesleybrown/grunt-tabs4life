@@ -4,6 +4,7 @@
 	"expr": true,
 	"forin": true,
 	"latedef": true,
+	"laxbreak": true,
 	"multistr": true,
 	"newcap": true,
 	"noarg": true,

@@ -8,6 +8,8 @@ var execOptions = {
 };
 
 describe('Grunt tabs4life', function () {
+	this.timeout(5000);
+	
 	describe('when checking self', function () {
 		it('should be lint free', function (done) {
 			exec('grunt', execOptions, function (error, stdout) {

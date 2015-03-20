@@ -85,7 +85,7 @@ function good() {
 // Just going to call this example so jshint doesn't complain
 good();
 
-// We disallowOperatorBeforeLineBreak
+// We disallowOperatorBeforeLineBreak ?", "||", "."
 var chainable = {
 	example: function () {
 		return {
@@ -105,6 +105,24 @@ chainable.
 	chained()
 ;
 */
+
+b = c
+	? a
+	: b
+;
+/* BAD
+b = c ?
+	a :
+	b
+;
+*/
+
+switch (b) {
+	case 'one':
+		break;
+	case 'two':
+		break;
+}
 
 // We disallowPaddingNewlinesInBlocks
 if (true) {
