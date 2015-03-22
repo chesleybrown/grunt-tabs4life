@@ -1,5 +1,5 @@
-# grunt-tabs4life
-
+![App Logo](https://raw.githubusercontent.com/chesleybrown/grunt-tabs4life/master/media/logo-small.png) grunt-tabs4life
+=========================
 [![Build Status](https://travis-ci.org/chesleybrown/grunt-tabs4life.svg?branch=master)](https://travis-ci.org/chesleybrown/grunt-tabs4life)
 [![Dependency Status](https://david-dm.org/chesleybrown/grunt-tabs4life.svg)](https://david-dm.org/chesleybrown/grunt-tabs4life)
 [![devDependency Status](https://david-dm.org/chesleybrown/grunt-tabs4life/dev-status.svg)](https://david-dm.org/chesleybrown/grunt-tabs4life#info=devDependencies)
