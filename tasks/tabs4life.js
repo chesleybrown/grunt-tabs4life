@@ -21,8 +21,16 @@ module.exports = function (grunt) {
 		
 		// Get jscs settings from .jscsrc file and load them as the defaults
 		var jscsrc = grunt.file.readJSON(__dirname + '/../.jscsrc');
+		
+		// Jscs doesn't allow false options, so delete params that are false
+		var jscsOptions = _.extend(jscsrc, options.jscs || {});
+		_.each(jscsOptions, function (option, key) {
+			if (option === false) {
+				delete jscsOptions[key];
+			}
+		});
 		grunt.config('jscs', {
-			options: _.extend(jscsrc, options.jscs || {}),
+			options: jscsOptions,
 			src: js
 		});
 		grunt.task.run('jscs');

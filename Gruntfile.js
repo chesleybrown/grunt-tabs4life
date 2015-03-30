@@ -33,7 +33,8 @@ module.exports = function (grunt) {
 			testJscsCustomConfig: {
 				options: {
 					jscs: {
-						disallowTrailingWhitespace: true
+						disallowTrailingWhitespace: true,
+						requireLineFeedAtFileEnd: false
 					}
 				},
 				src: ['Gruntfile.js', 'tasks/**/*.js']
