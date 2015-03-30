@@ -3,22 +3,23 @@
 // All comments must begin with a capital (requireCapitalizedComments)
 
 // We disallowMultipleVarDecl exceptUndefined
-var a, b, c, d;
-var x = 'example';
-var y = 'another';
-
-// Just going to call this example so jshint doesn't complain
-a();
+/* BAD
+var
+	x = 1,
+	y = 2
+;
+var x, y = 2, z;
+*/
 
 // We disallowEmptyBlocks except for catch blocks
+/* BAD
 if (a == b) {
+	
+}
+else {
 	c = d;
 }
-try {
-	a = b;
-}
-catch (err) {
-}
+*/
 
 // We disallowKeyword with
 
@@ -30,14 +31,17 @@ catch (err) {
  * We disallowMultipleLineStrings, instead it should be handled like the
  * following
  */
-x =
-	'multi' +
-	'line'
+/* BAD
+var x =
+	"multi \
+	line"
 ;
-y = 'single line';
+*/
 
 // We disallowNewlineBeforeBlockStatements
+/* BAD
 function good() {
+	
 	var obj = {
 		val: true
 	};
@@ -45,215 +49,244 @@ function good() {
 	return {
 		data: obj
 	};
+	
 }
-
-// Just going to call this example so jshint doesn't complain
-good();
+*/
 
 // We disallowOperatorBeforeLineBreak ?", "||", "."
-var chainable = {
-	example: function () {
-		return {
-			chained: function () {
-			}
-		};
-	}
-};
-chainable
-	.example()
-	.chained()
+/* BAD
+chainable.
+	example().
+	chained()
 ;
+*/
 
-b = c
-	? a
-	: b
+/* BAD
+b = c ?
+	a :
+	b
 ;
-
-switch (b) {
-	case 'one':
-		break;
-	case 'two':
-		break;
-}
+*/
 
 // We disallowPaddingNewlinesInBlocks
+/* BAD
 if (true) {
-	a();
+	
+	doSomething();
+	
 }
+*/
 
 // We disallowQuotedKeysInObjects
-x = {
-	a: 'example'
-};
+/* BAD
+var x = {'a': 1};
+*/
 
 // We disallowSpacesInNamedFunctionExpression beforeOpeningRoundBrace
-x = function d() {
-	a();
-};
+/* BAD
+var x = function a (){};
+*/
 
 // We disallowSpacesInsideObjectBrackets
-x = {
-	a: {
-		b: 1
-	}
-};
+/* BAD
+var x = { a: { b: 1 } };
+*/
 
 // We disallowSpacesInsideArrayBrackets
-x = [[1]];
+/* BAD
+x = [ [ 1 ] ];
+*/
 
 // We disallowSpacesInsideParentheses
-x = (1 + 2) * 3;
+/* BAD
+var x = ( 1 + 2 );
+var x = foo( {} );
+*/
 
 // We disallowSpaceAfterPrefixUnaryOperators
-x = !a;
-b = ++c;
+/* BAD
+x = ! a;
+b = ++ c;
+*/
 
 // We disallowSpaceBeforeKeywords
+/* BAD
 if (true) {
 	a = 1;
-}
-else {
+}else {
 	b = 2;
 }
+*/
 
 // We disallowSpaceBeforePostfixUnaryOperators
-x = a++;
-b = c--;
+/* BAD
+x = a ++;
+b = c --;
+*/
 
 // We disallowSpacesInCallExpression
-x = a();
+/* BAD
+x = a ();
+*/
 
 // We disallowSpacesInFunctionDeclaration beforeOpeningRoundBrace
 // We disallowSpacesInNamedFunctionExpression beforeOpeningRoundBrace
 // We requireSpacesInFunctionDeclaration beforeOpeningCurlyBrace
 // We requireSpacesInNamedFunctionExpression beforeOpeningCurlyBrace
-function a() {}
-a();
+/* BAD
+function a (){}
+*/
 
 // We disallowTrailingWhitespace ignoreEmptyLines
 
 // We disallowTrailingComma
+/* BAD
 x = [
 	'first',
-	'second'
+	'second',
 ];
+*/
 
 // We disallowYodaConditions
-if (a == 1) {
+/* BAD
+if (1 == a) {
 	return;
 }
+*/
 
 // We requireBlocksOnNewline
-if (true) {
-	a();
-}
+/* BAD
+if (true) {a();}
+*/
 
 // We requireCamelCaseOrUpperCaseIdentifiers ignoreProperties
-var camelCase = 0;
-var CamelCase = 1;
-var _camelCase = 2;
-var camelCase_ = 3;
-var UPPER_CASE = 4;
-var obj = {
-	some_id: 100
-};
-
-// Use vars so jshint doesn't complain
-camelCase = CamelCase = _camelCase = camelCase_ = UPPER_CASE = obj;
+/* BAD
+var lower_case = 1;
+var Mixed_case = 2;
+var mixed_Case = 3;
+*/
 
 // We requireCapitalizedConstructors
-var B = function () {};
-c = new B();
+/* BAD
+var b = function ();
+c = new b();
+*/
 
 // We requireCurlyBraces
-if (true) {
-	b++;
-}
+/* BAD
+if (true) b++;
+*/
 
 // We requireSpaceAfterKeywords
-if (true) {
+/* BAD
+if(true) {
 	b++;
 }
+*/
 
 // We requireSpaceAfterLineComment
 
 // We requireCommaBeforeLineBreak
+/* BAD
 b = {
-	one: 1,
-	two: 2
+	one: 1
+	, two: 2
 };
+*/
 
 // We requireKeywordsOnNewLine
+/* BAD
 if (c) {
 	b++;
-}
-else {
+} else {
 	b--;
 }
+*/
 
 // We requireLineBreakAfterVariableAssignment
-var a = 8;
-var b = 5;
+/* BAD
+var a = 8; var b = 5;
+*/
 
 // We requireParenthesesAroundIIFE
-b = (function () {
+/* BAD
+b = function () {
 	return 1;
-})();
+}();
+*/
 
 // We requireSpaceBeforeBinaryOperators
-b !== c;
+/* BAD
+b!== c;
+*/
 
 // We requireSpaceBeforeBlockStatements
-if (true) {
+/* BAD
+if (true){
 	a();
 }
-else {
+else{
 	b = c;
 }
+*/
 
 // We requireSpaceBetweenArguments
-a(b, c);
+/* BAD
+a(b,c);
+*/
 
 // We requireSpacesInConditionalExpression
-a = b ? c : d;
+/* BAD
+a = b? c :d;
+*/
 
 // We requireSpacesInAnonymousFunctionExpression
-a = function () {};
+/* BAD
+a = function(){};
+*/
 
 // We requireSpacesInForStatement
-for (var i = 0; i < b; i++) {
+/* BAD
+for (var i = 0;i < b;i++) {
 	b++;
 }
+*/
 
 // We requireSpaceAfterBinaryOperators
-d = b + c;
+/* BAD
+d = b +c;
+*/
 
 // We safeContextKeyword self or ctrl
+/* BAD
 a = function () {
-	var self = this;
-	self.example();
+	var that = this;
+	that.example();
 };
-a = function () {
-	var ctrl = this;
-	ctrl.example();
-};
+*/
 
 // We validateLineBreaks LF
 
 // We validateIndentation \t and includeEmptyLines
+/* BAD
 if (true) {
 	b = c;
-	
+
 	c = b;
 }
+*/
 
 // We validateParameterSeparator ', '
-function a(b, c) {
+/* BAD
+function a(b , c) {
 	b = c;
 }
 a();
+*/
 
 // We validateQuoteMarks
-b = 'string with "single" quotes only';
+/* BAD
+b = "string with \"single\" quotes only";
+*/
 
 // We requireLineFeedAtFileEnd

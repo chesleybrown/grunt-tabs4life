@@ -75,6 +75,13 @@ module.exports = function (grunt) {
 					'tasks/**/*.js',
 					'test/files/bad/test_lintspaces.html'
 				]
+			},
+			testEverythingBad: {
+				src: [
+					'Gruntfile.js',
+					'tasks/**/*.js',
+					'test/files/bad/test_bad.js'
+				]
 			}
 		}
 	});

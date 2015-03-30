@@ -93,5 +93,15 @@ describe('Grunt tabs4life', function () {
 				});
 			});
 		});
+		
+		describe('because they everything is bad', function () {
+			it('should now errors', function (done) {
+				exec('grunt tabs4life:testEverythingBad', execOptions, function (error, stdout) {
+					expect(error).not.to.be.null;
+					expect(stdout).to.contain('code style errors found');
+					done();
+				});
+			});
+		});
 	});
 });
