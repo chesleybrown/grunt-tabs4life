@@ -56,7 +56,6 @@
 	"disallowKeywordsOnNewLine": ["+"],
 	"requireBlocksOnNewline": true,
 	"requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
-	"requireCapitalizedComments": true,
 	"requireCapitalizedConstructors": true,
 	"requireCurlyBraces": [
 		"if",

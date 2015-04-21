@@ -1,6 +1,7 @@
 'use strict';
 
-// All comments must begin with a capital (requireCapitalizedComments)
+// comments can begin with an lowercase
+// Or an uppercase letter
 
 // We disallowMultipleVarDecl exceptUndefined
 var a, b, c, d;

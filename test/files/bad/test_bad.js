@@ -1,7 +1,5 @@
 'use strict';
 
-// All comments must begin with a capital (requireCapitalizedComments)
-
 // We disallowMultipleVarDecl exceptUndefined
 /* BAD
 var
