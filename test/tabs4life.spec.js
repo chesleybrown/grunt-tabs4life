@@ -67,7 +67,7 @@ describe('Grunt tabs4life', function () {
 			it('should now find jscs errors', function (done) {
 				exec('grunt tabs4life:testJscsBad', execOptions, function (error, stdout) {
 					expect(error).not.to.be.null;
-					expect(stdout).to.contain('One space required before opening brace for block expressions');
+					expect(stdout).to.contain('One (or more) spaces required before opening brace for block expressions');
 					expect(stdout).to.contain('Missing line feed at file end');
 					done();
 				});
