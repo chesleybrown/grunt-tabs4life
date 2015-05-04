@@ -1,5 +1,5 @@
 {
-	"bitwise": true,
+	"bitwise": false,
 	"curly": true,
 	"expr": true,
 	"forin": true,
