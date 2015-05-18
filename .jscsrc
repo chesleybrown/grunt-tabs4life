@@ -37,6 +37,7 @@
 		"return",
 		"try",
 		"catch",
+		"finally",
 		"typeof"
 	],
 	"disallowSpaceBeforePostfixUnaryOperators": [
@@ -64,7 +65,8 @@
 		"while",
 		"do",
 		"try",
-		"catch"
+		"catch",
+		"finally"
 	],
 	"requireLineFeedAtFileEnd": true,
 	"requireSpaceAfterKeywords": [
@@ -78,13 +80,15 @@
 		"return",
 		"try",
 		"catch",
+		"finally",
 		"typeof"
 	],
 	"requireSpaceAfterLineComment": true,
 	"requireCommaBeforeLineBreak": true,
 	"requireKeywordsOnNewLine": [
 		"else",
-		"catch"
+		"catch",
+		"finally"
 	],
 	"requireLineBreakAfterVariableAssignment": true,
 	"requireParenthesesAroundIIFE": true,

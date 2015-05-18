@@ -20,6 +20,9 @@ try {
 }
 catch (err) {
 }
+finally {
+	b = d;
+}
 
 // We disallowKeyword with
 
