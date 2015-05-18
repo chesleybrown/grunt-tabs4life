@@ -1,7 +1,7 @@
 {
 	"name": "grunt-tabs4life",
 	"description": "Grunt task for enforcing a very opinionated coding style.",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"author": {
 		"name": "Chesley Brown",
 		"email": "me@chesleybrown.ca",
