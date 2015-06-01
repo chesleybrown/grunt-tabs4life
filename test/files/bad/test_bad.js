@@ -228,6 +228,12 @@ else{
 }
 */
 
+/* We requireSpaceBeforeObjectValues
+b = {
+	key:'value'
+};
+*/
+
 // We requireSpaceBetweenArguments
 /* BAD
 a(b,c);

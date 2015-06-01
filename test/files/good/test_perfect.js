@@ -215,6 +215,11 @@ else {
 	b = c;
 }
 
+// We requireSpaceBeforeObjectValues
+b = {
+	key: 'value'
+};
+
 // We requireSpaceBetweenArguments
 a(b, c);
 
