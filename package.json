@@ -1,40 +1,40 @@
 {
-  "name": "grunt-tabs4life",
-  "description": "Grunt task for enforcing a very opinionated coding style.",
-  "version": "2.0.0",
-  "author": {
-    "name": "Chesley Brown",
-    "email": "me@chesleybrown.ca",
-    "url": "http://www.chesleybrown.ca"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chesleybrown/grunt-tabs4life.git"
-  },
-  "license": "MIT",
-  "scripts": {
-    "test": "mocha",
-    "grunt": "grunt"
-  },
-  "dependencies": {
-    "lodash": "^3.5.0",
-    "grunt-contrib-jshint": "^0.11.0",
-    "grunt-jscs": "^2.3.0",
-    "grunt-lintspaces": "^0.7.1"
-  },
-  "devDependencies": {
-    "chai": "^3.4.1",
-    "grunt": "^0.4.5",
-    "grunt-cli": "^0.1.13",
-    "mocha": "^2.0.1"
-  },
-  "files": [
-    "tasks",
-    ".editorconfig",
-    ".jshintrc",
-    ".jscsrc"
-  ]
+	"name": "grunt-tabs4life",
+	"description": "Grunt task for enforcing a very opinionated coding style.",
+	"version": "2.0.0",
+	"author": {
+		"name": "Chesley Brown",
+		"email": "me@chesleybrown.ca",
+		"url": "http://www.chesleybrown.ca"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chesleybrown/grunt-tabs4life.git"
+	},
+	"license": "MIT",
+	"scripts": {
+		"test": "mocha",
+		"grunt": "grunt"
+	},
+	"dependencies": {
+		"lodash": "^3.5.0",
+		"grunt-contrib-jshint": "^0.11.0",
+		"grunt-jscs": "^2.3.0",
+		"grunt-lintspaces": "^0.7.1"
+	},
+	"devDependencies": {
+		"chai": "^3.4.1",
+		"grunt": "^0.4.5",
+		"grunt-cli": "^0.1.13",
+		"mocha": "^2.0.1"
+	},
+	"files": [
+		"tasks",
+		".editorconfig",
+		".jshintrc",
+		".jscsrc"
+	]
 }
