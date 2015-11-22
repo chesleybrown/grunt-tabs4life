@@ -16,7 +16,8 @@
 	},
 	"license": "MIT",
 	"scripts": {
-		"test": "mocha"
+		"test": "mocha",
+		"grunt": "grunt"
 	},
 	"dependencies": {
 		"lodash": "^3.5.0",

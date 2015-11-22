@@ -119,6 +119,9 @@ if (true) {
 else {
 	b = 2;
 }
+if (true && typeof 'str' === 'string') {
+	a = 1;
+}
 
 // We disallowSpaceBeforePostfixUnaryOperators
 x = a++;

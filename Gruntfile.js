@@ -23,6 +23,7 @@ module.exports = function (grunt) {
 					'LICENSE',
 					'tasks/**/*.js',
 					'README.md',
+					'package.json',
 					'test/*.js',
 					'test/files/good/**/*'
 				]

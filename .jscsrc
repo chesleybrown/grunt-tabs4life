@@ -37,8 +37,7 @@
 		"return",
 		"try",
 		"catch",
-		"finally",
-		"typeof"
+		"finally"
 	],
 	"disallowSpaceBeforePostfixUnaryOperators": [
 		"++",
