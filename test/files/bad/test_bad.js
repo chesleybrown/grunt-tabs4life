@@ -101,6 +101,11 @@ var x = ( 1 + 2 );
 var x = foo( {} );
 */
 
+// We disallowSpaceAfterObjectKeys
+/* BAD
+var x = {a : 1};
+*/
+
 // We disallowSpaceAfterPrefixUnaryOperators
 /* BAD
 x = ! a;

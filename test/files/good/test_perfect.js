@@ -108,6 +108,9 @@ x = [[1]];
 // We disallowSpacesInsideParentheses
 x = (1 + 2) * 3;
 
+// We disallowSpaceAfterObjectKeys
+x = {a: 1};
+
 // We disallowSpaceAfterPrefixUnaryOperators
 x = !a;
 b = ++c;
