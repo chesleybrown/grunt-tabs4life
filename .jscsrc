@@ -3,6 +3,7 @@
 	"disallowKeywords": [
 		"with"
 	],
+	"disallowMultipleSpaces": {"allowEOLComments": true},
 	"disallowMultipleVarDecl": "exceptUndefined",
 	"disallowMixedSpacesAndTabs": true,
 	"disallowMultipleLineBreaks": true,
