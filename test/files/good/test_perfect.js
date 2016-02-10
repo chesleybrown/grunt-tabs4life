@@ -3,6 +3,9 @@
 // comments can begin with an lowercase
 // Or an uppercase letter
 
+// We disallowMultipleSpaces, except before line comments
+var look = 'at all the silly spaces';        // before this comment
+
 // We disallowMultipleVarDecl exceptUndefined
 var a, b, c, d;
 var x = 'example';

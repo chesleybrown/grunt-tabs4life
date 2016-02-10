@@ -1,5 +1,10 @@
 'use strict';
 
+// We disallowMultipleSpaces, except before line comments
+/* BAD
+var x = { omg:       'I\'m floating awaaaay...' };
+*/
+
 // We disallowMultipleVarDecl exceptUndefined
 /* BAD
 var
