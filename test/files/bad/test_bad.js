@@ -30,10 +30,8 @@ else {
 
 // We disallowMultipleLineBreaks
 
-/*
- * We disallowMultipleLineStrings, instead it should be handled like the
- * following
- */
+// We disallowMultipleLineStrings, instead it should be handled like the
+// following
 /* BAD
 var x =
 	"multi \

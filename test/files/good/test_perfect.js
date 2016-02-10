@@ -33,10 +33,8 @@ finally {
 
 // We disallowMultipleLineBreaks
 
-/*
- * We disallowMultipleLineStrings, instead it should be handled like the
- * following
- */
+// We disallowMultipleLineStrings, instead it should be handled like the
+// following
 x =
 	'multi' +
 	'line'
