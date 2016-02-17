@@ -12,13 +12,7 @@ var a, b, c, d;
 var x = 'example';
 var y = 'another';
 
-// Just going to call this example so jshint doesn't complain
-a();
-
 // We disallowEmptyBlocks except for catch blocks
-if (a == b) {
-	c = d;
-}
 try {
 	a = b;
 }
@@ -52,9 +46,7 @@ function good() {
 		data: obj
 	};
 }
-
-// Just going to call this example so jshint doesn't complain
-good();
+good();  // call to kill jshint warning
 
 // We disallowOperatorBeforeLineBreak ?", "||", "."
 var chainable = {
@@ -84,7 +76,7 @@ switch (b) {
 
 // We disallowPaddingNewlinesInBlocks
 if (true) {
-	a();
+	a = a;
 }
 
 // We disallowQuotedKeysInObjects
@@ -94,7 +86,7 @@ x = {
 
 // We disallowSpacesInNamedFunctionExpression beforeOpeningRoundBrace
 x = function d() {
-	a();
+	a = a;
 };
 
 // We disallowSpacesInsideObjectBrackets
@@ -133,14 +125,13 @@ x = a++;
 b = c--;
 
 // We disallowSpacesInCallExpression
-x = a();
-
 // We disallowSpacesInFunctionDeclaration beforeOpeningRoundBrace
 // We disallowSpacesInNamedFunctionExpression beforeOpeningRoundBrace
 // We requireSpacesInFunctionDeclaration beforeOpeningCurlyBrace
 // We requireSpacesInNamedFunctionExpression beforeOpeningCurlyBrace
-function a() {}
-a();
+function f() {}
+x = f();
+f();
 
 // We disallowTrailingWhitespace ignoreEmptyLines
 
@@ -157,7 +148,7 @@ if (a == 1) {
 
 // We requireBlocksOnNewline
 if (true) {
-	a();
+	f();
 }
 
 // We requireCamelCaseOrUpperCaseIdentifiers ignoreProperties
@@ -217,7 +208,7 @@ b !== c;
 
 // We requireSpaceBeforeBlockStatements
 if (true) {
-	a();
+	f();
 }
 else {
 	b = c;
@@ -229,7 +220,7 @@ b = {
 };
 
 // We requireSpaceBetweenArguments
-a(b, c);
+f(b, c);
 
 // We requireSpacesInConditionalExpression
 a = b ? c : d;
@@ -265,10 +256,10 @@ if (true) {
 }
 
 // We validateParameterSeparator ', '
-function a(b, c) {
+function g(b, c) {
 	b = c;
 }
-a();
+g();  // call to kill jshint warning
 
 // We validateQuoteMarks
 b = 'string with "single" quotes only';
